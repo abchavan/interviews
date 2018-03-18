@@ -1,7 +1,9 @@
 package com.interview.company.airbnb;
 
-import org.junit.*;
-import org.junit.rules.Timeout;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,8 +18,8 @@ public class AddTwoNumbersTest {
 
 	static AddTwoNumbers addTwoNumbers;
 
-	@Rule
-	public Timeout globalTimeout = Timeout.seconds(10);
+    //@Rule
+    //public Timeout globalTimeout = Timeout.seconds(10);
 
 	@BeforeClass
 	public static void setup() {
