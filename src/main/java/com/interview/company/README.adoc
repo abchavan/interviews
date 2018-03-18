@@ -15,3 +15,13 @@ Assume that:: You may assume the two numbers do not contain any leading zero, ex
  Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
  Output: 7 -> 0 -> 8
 -----------------   
+
+ 
+* https://github.com/sunilsoni/interviews/blob/master/src/main/java/com/interview/company/airbnb/ConvertSortedArrayToBinarySearchTree.java[*Convert Sorted Array To Binary Search Tree:*] 
+Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
+
+
+* https://github.com/sunilsoni/interviews/blob/master/src/main/java/com/interview/company/airbnb/HouseRobber.java[*House Robber:*] 
+You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
+
+Given that:: Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.
