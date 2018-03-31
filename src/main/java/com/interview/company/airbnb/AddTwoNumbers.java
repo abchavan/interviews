@@ -2,39 +2,41 @@ package com.interview.company.airbnb;
 
 import lombok.Data;
 
+/**
+ * @see https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch02/SumLists.java
+ */
 public class AddTwoNumbers {
 
-	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-		ListNode current1 = l1;
-		ListNode current2 = l2;
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode current1 = l1;
+        ListNode current2 = l2;
 
-		ListNode head = new ListNode(0);
-		ListNode currentHead = head;
+        ListNode head = new ListNode(0);
+        ListNode currentHead = head;
 
-		int sum = 0;
+        int sum = 0;
 
-		while (current1 != null || current2 != null) {
-			sum /= 10;
-			if (current1 != null) {
-				sum += current1.val;
-				current1 = current1.next;
-			}
+        while (current1 != null || current2 != null) {
+            sum /= 10;
+            if (current1 != null) {
+                sum += current1.val;
+                current1 = current1.next;
+            }
+            if (current2 != null) {
+                sum += current2.val;
+                current2 = current2.next;
+            }
 
-			if (current2 != null) {
-				sum += current2.val;
-				current2 = current2.next;
-			}
+            currentHead.next = new ListNode(sum % 10);
+            currentHead = currentHead.next;
+        }
 
-			currentHead.next = new ListNode(sum % 10);
-			currentHead = currentHead.next;
-		}
+        if (sum / 10 == 1) {
+            currentHead.next = new ListNode(1);
+        }
+        return head.next;
 
-		if (sum / 10 == 1) {
-			currentHead.next = new ListNode(1);
-		}
-		return head.next;
-
-	}
+    }
 
 }
 
@@ -42,9 +44,7 @@ public class AddTwoNumbers {
 class ListNode {
     int val;
     ListNode next;
-
     public ListNode(int x) {
         val = x;
     }
-
 }
