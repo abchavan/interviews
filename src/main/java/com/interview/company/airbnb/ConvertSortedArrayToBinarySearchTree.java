@@ -1,5 +1,14 @@
 package com.interview.company.airbnb;
 
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Setter
+@Getter
+@ToString
+@EqualsAndHashCode
 class TreeNode {
     int val;
     TreeNode left;
