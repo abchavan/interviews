@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 @RunWith(SpringRunner.class)
@@ -41,6 +42,17 @@ public class ConvertSortedArrayToBinarySearchTreeTest {
         TreeNode treeNode = obj.sortedArrayToBST(nums);
         LOG.info("treeNode-->" + treeNode);
         assertNotNull(treeNode);
+
+        TreeNode node1 = new TreeNode(2);
+        TreeNode node2 = new TreeNode(1);
+        TreeNode node3 = new TreeNode(3);
+        TreeNode node4 = new TreeNode(4);
+
+        node1.left = node2;
+        node1.right = node3;
+        node3.right = node4;
+
+        assertEquals(node1, treeNode);
 
     }
 }
