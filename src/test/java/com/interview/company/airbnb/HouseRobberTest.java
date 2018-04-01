@@ -1,7 +1,9 @@
 package com.interview.company.airbnb;
 
-import org.junit.*;
-import org.junit.rules.Timeout;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,8 +15,8 @@ import static org.junit.Assert.assertEquals;
 public class HouseRobberTest {
     static HouseRobber houseRobber;
     private static Logger LOG = LoggerFactory.getLogger(HouseRobberTest.class);
-    @Rule
-    public Timeout globalTimeout = Timeout.seconds(10);
+    // @Rule
+    // public Timeout globalTimeout = Timeout.seconds(10);
     long start, end, diff;
 
     @BeforeClass
@@ -35,11 +37,20 @@ public class HouseRobberTest {
     }
 
     @Test
-    public void robTest() {
+    public void rob1Test() {
         int[] nums = {6, 2, 7, 4};
-        int actual = houseRobber.rob(nums);
+        int actual = houseRobber.rob1(nums);
 
-        LOG.info("actual {}", actual);
+        LOG.info("actual1 {}", actual);
+        assertEquals(13, actual);
+    }
+
+    @Test
+    public void rob2Test() {
+        int[] nums = {6, 2, 7, 4};
+        int actual = houseRobber.rob11(nums);
+
+        LOG.info("actual1 {}", actual);
         assertEquals(13, actual);
     }
 }
