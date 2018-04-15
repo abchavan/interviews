@@ -36,9 +36,7 @@ Given that:: Given a list of non-negative integers representing the amount of mo
 * https://github.com/sunilsoni/interviews/blob/master/src/main/java/com/interview/company/airbnb/MergeKSortedLists.java[*Merge K Sorted Lists :*]
   Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 
-  * https://github.com/sunilsoni/interviews/blob/master/src/main/java/com/interview/company/airbnb/RegularExpressionMatching.java[*Regular Expression Matching:*]
-
-Implement regular expression matching with support for '.' and '*'.
+* https://github.com/sunilsoni/interviews/blob/master/src/main/java/com/interview/company/airbnb/RegularExpressionMatching.java[*Regular Expression Matching:*] Implement regular expression matching with support for '.' and '*'.
 
 '.' Matches any single character.
 
