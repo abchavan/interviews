@@ -35,3 +35,32 @@ Given that:: Given a list of non-negative integers representing the amount of mo
 
 * https://github.com/sunilsoni/interviews/blob/master/src/main/java/com/interview/company/airbnb/MergeKSortedLists.java[*Merge K Sorted Lists :*]
   Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+
+  * https://github.com/sunilsoni/interviews/blob/master/src/main/java/com/interview/company/airbnb/RegularExpressionMatching.java[*Regular Expression Matching:*]
+
+Implement regular expression matching with support for '.' and '*'.
+
+'.' Matches any single character.
+
+'*' Matches zero or more of the preceding element.
+
+The matching should cover the entire input string (not partial).
+
+The function prototype should be:
+[source,java]
+-----------------
+boolean isMatch(String s, String p)
+-----------------
+
+Some examples::
+
+[source,java]
+-----------------
+isMatch("aa","a") return false
+isMatch("aa","aa") return true
+isMatch("aaa","aa") return false
+isMatch("aa", "a*") return true
+isMatch("aa", ".*") return true
+isMatch("ab", ".*") return true
+isMatch("aab", "c*a*b") return true
+-----------------
