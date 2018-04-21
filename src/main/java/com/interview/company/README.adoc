@@ -77,3 +77,30 @@ Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 -----------------
 
+* https://github.com/sunilsoni/interviews/blob/master/src/main/java/com/interview/company/airbnb/ValidParentheses.java[*Valid Parentheses:*] Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
+
+* https://github.com/sunilsoni/interviews/blob/master/src/main/java/com/interview/company/amazon/BestTimeToBuyAndSellStock.java[*Stock Buy Sell to Maximize Profit:*] Say you have an array for which the ith element is the price of a given stock on day i.
+
+If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.
+
+Example1::
+
+[source,java]
+-----------------
+Input: [7, 1, 5, 3, 6, 4]
+Output: 5
+
+max. difference = 6-1 = 5 (not 7-1 = 6, as selling price needs to be larger than buying price)
+-----------------
+
+Example2::
+
+[source,java]
+-----------------
+Input: [7, 6, 4, 3, 1]
+Output: 0
+
+In this case, no transaction is done, i.e. max profit = 0.
+-----------------

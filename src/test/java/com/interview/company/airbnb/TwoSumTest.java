@@ -110,7 +110,41 @@ public class TwoSumTest {
 
         exception.expect(IllegalArgumentException.class);
         exception.expectMessage("No two sum solution");
-        twoSum.twoSum3(nums, target);
+        twoSum.twoSum4(nums, target);
+
+
+    }
+
+    @Test
+    public void twoSum4Test() {
+
+        int target = 9;
+        int[] actual = twoSum.twoSum4(nums, target);
+
+        int[] expected = {0, 1};
+
+        assertArrayEquals(actual, expected);
+
+
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void twoSum4ExceptionTest() {
+
+        int target = 10;
+        twoSum.twoSum4(nums, target);
+
+
+    }
+
+    @Test
+    public void twoSum4ExceptionTest2() {
+
+        int target = 10;
+
+        exception.expect(IllegalArgumentException.class);
+        exception.expectMessage("No two sum solution");
+        twoSum.twoSum4(nums, target);
 
 
     }
