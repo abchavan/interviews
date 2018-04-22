@@ -34,14 +34,40 @@ public class BestTimeToBuyAndSellStockTest {
     }
 
     @Test
-    public void maxProfit() {
+    public void maxProfit1Test() {
         int[] prices = {7, 1, 5, 3, 6, 4};
-        int actual = buySell.maxProfit(prices);
+        int actual = buySell.maxProfit1(prices);
 
         assertEquals(5, actual);
 
         int[] prices1 = {7, 6, 4, 3, 1};
-        actual = buySell.maxProfit(prices1);
+        actual = buySell.maxProfit1(prices1);
+        assertEquals(0, actual);
+
+    }
+
+    @Test
+    public void maxProfit2Test() {
+        int[] prices = {7, 1, 5, 3, 6, 4};
+        int actual = buySell.maxProfit2(prices);
+
+        assertEquals(5, actual);
+
+        int[] prices1 = {7, 6, 4, 3, 1};
+        actual = buySell.maxProfit2(prices1);
+        assertEquals(0, actual);
+
+    }
+
+    @Test
+    public void maxProfit3Test() {
+        int[] prices = {7, 1, 5, 3, 6, 4};
+        int actual = buySell.maxProfit3(prices);
+
+        assertEquals(5, actual);
+
+        int[] prices1 = {7, 6, 4, 3, 1};
+        actual = buySell.maxProfit3(prices1);
         assertEquals(0, actual);
 
     }
