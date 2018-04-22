@@ -5,6 +5,9 @@ import org.junit.rules.ExpectedException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static org.junit.Assert.assertEquals;
+
+
 public class BestTimeToBuyAndSellStockTest {
     static BestTimeToBuyAndSellStock buySell;
     private static Logger LOG = LoggerFactory.getLogger(BestTimeToBuyAndSellStockTest.class);
@@ -32,7 +35,14 @@ public class BestTimeToBuyAndSellStockTest {
 
     @Test
     public void maxProfit() {
+        int[] prices = {7, 1, 5, 3, 6, 4};
+        int actual = buySell.maxProfit(prices);
 
-        buySell.maxProfit();
+        assertEquals(5, actual);
+
+        int[] prices1 = {7, 6, 4, 3, 1};
+        actual = buySell.maxProfit(prices1);
+        assertEquals(0, actual);
+
     }
 }

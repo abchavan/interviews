@@ -1,6 +1,8 @@
 package com.interview.company.amazon;
 
 //https://www.programcreek.com/2014/02/leetcode-best-time-to-buy-and-sell-stock-java/
+//https://en.wikipedia.org/wiki/Maximum_subarray_problem
+//https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 public class BestTimeToBuyAndSellStock {
 
     public int maxProfit(int[] prices) {
